@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Start MySQL Database",
+      "type": "shell",
+      "command": ".\\start-db.bat",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "servers"
+      }
+    },
+    {
+      "label": "2. Start Backend Server",
+      "type": "shell",
+      "command": ".\\start-backend.bat",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "servers"
+      }
+    },
+    {
+      "label": "3. Start Frontend UI",
+      "type": "shell",
+      "command": ".\\start-frontend.bat",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "servers"
+      }
+    },
+    {
+      "label": "Run Automated Tests",
+      "type": "shell",
+      "command": "npm test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
